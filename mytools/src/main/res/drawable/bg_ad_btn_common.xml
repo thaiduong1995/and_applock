@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="ResourceName">
+    <gradient
+        android:angle="0.0"
+        android:endColor="#3467FE"
+        android:startColor="#3467FE" />
+    <corners android:radius="@dimen/gnt_ad_indicator_height" />
+</shape>

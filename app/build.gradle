@@ -1,0 +1,169 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+    id 'kotlin-android'
+    id 'dagger.hilt.android.plugin'
+    id 'kotlin-parcelize'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
+    id 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'
+}
+
+android {
+    namespace 'com.example.myapplication'
+    compileSdk rootProject.compileSdkVersion
+
+    signingConfigs {
+        release {
+            keyAlias 'key0'
+            keyPassword '123456'
+            storePassword '123456'
+            storeFile file('/Users/hungnguyen/Desktop/applock.jks')
+        }
+    }
+
+    defaultConfig {
+        applicationId "com.cem.applock.hideapps.password"
+        minSdk rootProject.minSdkVersion
+        targetSdk rootProject.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        debug {
+            buildConfigField 'String', 'BASE_URL', "\"https://reqres.in\""
+            minifyEnabled = false
+        }
+
+        release {
+            buildConfigField 'String', 'BASE_URL', "\"https://reqres.in\""
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+
+    buildFeatures{
+        viewBinding true
+        buildConfig true
+    }
+    bundle {
+        language {
+            enableSplit = false
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+    }
+}
+
+dependencies {
+hc    implementation "androidx.core:core-ktx: $rootProject.androidXVersion"
+    implementation "androidx.appcompat:appcompat:$rootProject.appCompatVersion"
+    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.android.ump:user-messaging-platform:2.2.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    // dagger hilt
+    implementation("com.google.dagger:hilt-android:$dagger_version")
+    kapt("com.google.dagger:hilt-android-compiler:$dagger_compiler_version")
+
+    // coroutine
+    def coroutines_version = '1.6.4'
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutines_version"
+
+    //Room
+    def room_version = "2.6.1"
+    implementation ("androidx.room:room-ktx:$room_version")
+    implementation ("androidx.room:room-runtime:$room_version")
+    kapt ("androidx.room:room-compiler:$room_version")
+
+    // view model scope
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1'
+    implementation "androidx.fragment:fragment-ktx:1.5.3"
+
+    // retrofit
+    def retrofit_version = '2.9.0'
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.squareup.retrofit2:converter-moshi:$retrofit_version"
+
+    // moshi
+    def moshi_version = '1.11.0'
+    implementation "com.squareup.moshi:moshi-kotlin:$moshi_version"
+
+    // okhttp client
+    def ok_httpclient_version = '4.9.0'
+    implementation "com.squareup.okhttp3:okhttp:$ok_httpclient_version"
+    implementation "com.squareup.okhttp3:logging-interceptor:$ok_httpclient_version"
+
+    // glide library
+    def glide_version = '4.13.2'
+    implementation "com.github.bumptech.glide:glide:$glide_version"
+    kapt 'com.github.bumptech.glide:compiler:4.13.2'
+
+    //logging Timber
+    implementation 'com.jakewharton.timber:timber:5.0.1'
+
+    // Kotlin
+    def nav_version = "2.7.7"
+    implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
+
+    //lotte anim
+    implementation 'com.airbnb.android:lottie:5.2.0'
+
+    //gson
+    implementation 'com.google.code.gson:gson:2.8.9'
+
+    // finger print
+    implementation 'androidx.biometric:biometric:1.2.0-alpha04'
+
+    //map
+    implementation 'com.google.android.gms:play-services-maps:18.1.0'
+    implementation 'com.google.maps.android:maps-utils-ktx:2.2.0'
+    implementation 'com.google.android.gms:play-services-location:21.0.1'
+
+    implementation files('libs/shortcutext1.0.1.aar')
+
+    //ads
+    implementation 'com.google.android.gms:play-services-ads:22.1.0'
+    //sdk facebook fan
+    implementation 'com.google.ads.mediation:facebook:6.14.0.0'
+    //applovin mediation
+    implementation 'com.google.ads.mediation:applovin:11.9.0.0'
+    implementation 'com.applovin:applovin-sdk:11.10.1'
+
+    //firebase
+    implementation platform('com.google.firebase:firebase-bom:31.2.0')
+    implementation 'com.google.firebase:firebase-crashlytics-ktx'
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.firebase:firebase-messaging-ktx'
+
+    //tools ads
+    implementation project(":adModule")
+    implementation project(":firebase-module")
+
+    //shimmer load
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+
+    implementation 'com.google.android.flexbox:flexbox:3.0.0'
+
+    implementation 'com.yarolegovich:discrete-scrollview:1.5.1'
+
+    implementation("com.vanniktech:android-image-cropper:4.5.0")
+}

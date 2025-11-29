@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "90143089846",
+    "project_id": "cm-applock",
+    "storage_bucket": "cm-applock.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:90143089846:android:ac19848bd88711f8ceb217",
+        "android_client_info": {
+          "package_name": "com.cem.applock.hideapps.password"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "90143089846-ogeccnmekejv2u24v4800nar18o0t0k1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cem.applock.hideapps.password",
+            "certificate_hash": "d1e27262def9d41583be895ce871c1ca53f7af41"
+          }
+        },
+        {
+          "client_id": "90143089846-v93qgf3teqdkc3edj2en041n84nhvk71.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlinkD2O1b9B94jS-oP7WSAcUGsqMGHm0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "90143089846-v93qgf3teqdkc3edj2en041n84nhvk71.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "90143089846-524mo1lr9snlgug5fdbd1ns3fsluhve3.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.cem.applock.hideapps"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

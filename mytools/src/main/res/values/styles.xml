@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TransparentBackground" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">
+            @android:color/transparent
+        </item>
+    </style>
+
+    <style name="RoundedCornersDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="dialogCornerRadius">@dimen/dimen_10</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="adRatingBar" parent="Widget.AppCompat.RatingBar.Small">
+        <item name="android:progressDrawable">@drawable/ad_rating_bar_full</item>
+        <item name="android:minHeight">@dimen/size_15</item>
+        <item name="android:maxHeight">@dimen/size_15</item>
+    </style>
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/gray_star</item>
+        <item name="colorControlActivated">@color/yellow_star</item>
+    </style>
+
+</resources>

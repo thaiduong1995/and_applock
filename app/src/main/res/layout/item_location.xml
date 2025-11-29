@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="@dimen/size_8"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/ll_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_item_location"
+        android:baselineAligned="true"
+        android:elevation="5dp"
+        android:orientation="horizontal"
+        android:padding="@dimen/size_16"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvLocationName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:textColor="@color/grayC4CDE2"
+                android:lines="1"
+                android:ellipsize="end"
+                android:textSize="@dimen/text_size_16"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Location" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvLocationAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvLocationName"
+                android:layout_marginTop="@dimen/size_8"
+                android:layout_marginEnd="@dimen/size_8"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/grayC4CDE2"
+                android:textSize="@dimen/text_size_14"
+                tools:text="Ha Noi" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvRadius"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvLocationAddress"
+                android:layout_marginTop="@dimen/size_8"
+                android:text="@string/radius_inverse"
+                android:textColor="@color/grayC4CDE2"
+                android:textSize="@dimen/text_size_10" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvValueRadius"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/tvRadius"
+                android:layout_alignBottom="@+id/tvRadius"
+                android:layout_marginHorizontal="@dimen/size_12"
+                android:layout_toEndOf="@+id/tvRadius"
+                android:textColor="@color/blue1768F5"
+                android:textSize="@dimen/text_size_10"
+                tools:text="140m" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchInverse"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/size_30"
+                android:layout_marginTop="@dimen/size_8"
+                android:checked="false"
+                android:theme="@style/SwitchStyle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvLocationName" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_6"
+                android:paddingHorizontal="@dimen/size_8"
+                android:paddingVertical="@dimen/size_4"
+                android:text="@string/edit"
+                android:textColor="@color/grayC4CDE2"
+                android:textSize="@dimen/text_size_14"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/switchInverse"
+                app:layout_constraintTop_toBottomOf="@+id/switchInverse" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgDelete"
+        android:layout_width="@dimen/size_24"
+        android:layout_height="@dimen/size_24"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="@dimen/size_16"
+        android:src="@drawable/ic_delete_circle"
+        app:layout_constraintBottom_toBottomOf="@id/ll_location"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ll_location" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

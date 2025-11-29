@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_color_gray_radius_8"
+    android:padding="@dimen/size_16">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/your_app_is_stopped"
+        android:textColor="@color/grayC4CDE2"
+        android:textSize="@dimen/text_size_14"/>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/grayB58A8A8A"
+        android:layout_marginTop="@dimen/size_16"/>
+
+    <TextView
+        android:id="@+id/tvConfirm"
+        android:layout_width="@dimen/size_44"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/line"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/size_16"
+        android:gravity="center"
+        android:text="@string/ok"
+        android:textColor="@color/grayC4CDE2"
+        android:textSize="@dimen/text_size_14"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

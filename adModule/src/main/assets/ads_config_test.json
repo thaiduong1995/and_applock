@@ -1,0 +1,84 @@
+{
+  "configs": {
+    "enable": true,
+    "interval": 30,
+    "open_interval": 10,
+    "banner_interval": 10,
+    "native_interval": 10,
+    "load_interval": 10,
+    "app_name": "App Lock Ads",
+    "app_id": "ca-app-pub-5179928085266214~3164572319"
+  },
+  "units": {
+    "open_ads": [
+      {
+        "network": "admob",
+        "show_direct": false,
+        "unit_id": "ca-app-pub-3940256099942544/9257395921"
+      }
+    ],
+    "inter_splash": [
+      {
+        "network": "admob",
+        "show_direct": true,
+        "enable": true,
+        "unit_id": "ca-app-pub-3940256099942544/1033173712"
+      }
+    ],
+    "inter_back": [
+      {
+        "network": "admob",
+        "enable": true,
+        "show_direct": false,
+        "unit_id": "ca-app-pub-3940256099942544/1033173712"
+      }
+    ],
+    "inter_detail": [
+      {
+        "network": "admob",
+        "enable": true,
+        "show_direct": false,
+        "unit_id": "ca-app-pub-3940256099942544/1033173712"
+      }
+    ],
+    "banner_home": [
+      {
+        "network": "admob",
+        "unit_id": "ca-app-pub-3940256099942544/2014213617",
+        "position": "bottom",
+        "enable": true,
+        "collapsible": true
+      }
+    ],
+    "banner_detail": [
+      {
+        "network": "admob",
+        "unit_id": "ca-app-pub-3940256099942544/2014213617",
+        "enable": true,
+        "position": "bottom",
+        "collapsible": true
+      }
+    ],
+    "reward_ads": [
+      {
+        "network": "admob",
+        "enable": true,
+        "unit_id": "ca-app-pub-3940256099942544/5224354917"
+      }
+    ],
+    "native_ads": [
+      {
+        "network": "admob",
+        "enable": true,
+        "unit_id": "ca-app-pub-3940256099942544/2247696110"
+      }
+    ],
+    "native_detail": [
+      {
+        "network": "admob",
+        "enable": true,
+        "unit_id": "ca-app-pub-3940256099942544/2247696110"
+      }
+    ]
+  }
+}

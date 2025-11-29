@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+    <entry>
+        <key>configAdmob</key>
+        <value>
+            {
+            "config": {
+            "config_full": [
+            {
+            "network": "admob",
+            "id_full": "ca-app-pub-3940256099942544/1033173712",
+            "enable": true
+            },
+            {
+            "network": "admob",
+            "id_full": "ca-app-pub-3940256099942544/1033173712",
+            "enable": true
+            },
+            {
+            "network": "admob",
+            "id_full": "ca-app-pub-3940256099942544/1033173712",
+            "enable": true
+            }
+            ],
+            "config_open": [
+            {
+            "network": "admob",
+            "id_open": "ca-app-pub-3940256099942544/3419835294"
+            },
+            {
+            "network": "admob",
+            "id_open": "ca-app-pub-3940256099942544/3419835294"
+            },
+            {
+            "network": "admob",
+            "id_open": "ca-app-pub-3940256099942544/3419835294"
+            }
+            ],
+            "config_native": [
+            {
+            "network": "admob",
+            "id_native": "ca-app-pub-3940256099942544/2247696110",
+            "enable": true
+            },
+            {
+            "network": "admob",
+            "id_native": "ca-app-pub-3940256099942544/2247696110",
+            "enable": true
+            },
+            {
+            "network": "admob",
+            "id_native": "ca-app-pub-3940256099942544/2247696110",
+            "enable": true
+            }
+            ],
+            "config_banner": [
+            {
+            "network": "admob",
+            "id_banner": "ca-app-pub-3940256099942544/6300978111",
+            "enable": true
+            },
+            {
+            "network": "admob",
+            "id_banner": "ca-app-pub-3940256099942544/6300978111",
+            "enable": true
+            },
+            {
+            "network": "admob",
+            "id_banner": "ca-app-pub-3940256099942544/6300978111",
+            "enable": true
+            }
+            ],
+            "config_reward": [
+            {
+            "idReward": "ca-app-pub-3940256099942544/5224354917"
+            },
+            {
+            "idReward": "ca-app-pub-3940256099942544/5224354917"
+            },
+            {
+            "idReward": "ca-app-pub-3940256099942544/5224354917"
+            }
+            ]
+            }
+            }
+        </value>
+    </entry>
+    <entry>
+        <key>delayTimeDefault</key>
+        <value>10000</value>
+    </entry>
+    <entry>
+        <key>delayTimeFirst</key>
+        <value>5000</value>
+    </entry>
+    <entry>
+        <key>delayTimeOpen</key>
+        <value>10000</value>
+    </entry>
+    <entry>
+        <key>unsupported_version</key>
+        <value>["0.0"]</value>
+    </entry>
+
+    <!--    enable ads remote config-->
+    <entry>
+        <key>Open_App</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>Inter_Splash</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>Inter_Switch</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>Inter_Setup</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>Native_Choose_App</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>Banner_Forgot_Pattern</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>Inter_Search</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>Inter_Lock</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>Native_Lock</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>Inter_Unlock</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>Native_Security</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>Banner_Change_Pattern</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>Inter_Change_Pattern</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>Banner_Time_Based</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>Banner_History</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>Banner_Bookmark</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>Banner_Location_Based</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>Banner_Wifi_Based</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>Native_Capture_Intruder</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>Banner_Intruder_Record</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>Reward_Intruder_Record</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>Banner_Intruder_Detail</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>Banner_Fake_Icon</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>Interstitial_Fake_Icon</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>Reward_Fake_Icon</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>Banner_Fake_Cleanser</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>Inter_Cleanser</key>
+        <value>true</value>
+    </entry>
+</defaultsMap>

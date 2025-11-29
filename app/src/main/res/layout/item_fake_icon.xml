@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size_64"
+    android:layout_marginVertical="@dimen/size_8"
+    android:background="@drawable/bg_stroke_1_color_gray_radius_100"
+    android:padding="@dimen/size_8">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardIcon"
+        android:layout_width="@dimen/size_48"
+        android:layout_height="@dimen/size_48"
+        app:cardCornerRadius="@dimen/size_24"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintEnd_toStartOf="@id/imgNext"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgIcon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imgNext"
+        android:layout_width="@dimen/size_24"
+        android:layout_height="@dimen/size_24"
+        app:layout_constraintStart_toEndOf="@id/cardIcon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/imgAdd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/ic_double_next"/>
+
+    <ImageView
+        android:id="@+id/imgAdd"
+        android:layout_width="@dimen/size_48"
+        android:layout_height="@dimen/size_48"
+        app:layout_constraintStart_toEndOf="@id/imgNext"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tvChange"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_add_icon"/>
+    
+    <TextView
+        android:id="@+id/tvChange"
+        android:layout_width="@dimen/size_80"
+        android:layout_height="@dimen/size_34"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imgAdd"
+        android:gravity="center"
+        android:text="@string/change"
+        android:textSize="@dimen/text_size_14"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_radius_100_color_blue"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

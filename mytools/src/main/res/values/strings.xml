@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="suggest_update_app">New update is available</string>
+    <string name="suggest_update_app_message">To use this app, download the latest version</string>
+    <string name="update">Update</string>
+    <string name="cancel">Cancel</string>
+</resources>

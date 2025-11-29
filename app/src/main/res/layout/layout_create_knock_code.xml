@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_10"
+        android:text="@string/create_4_6_touches"
+        android:textColor="@color/grayC4CDE2"
+        android:textSize="@dimen/text_size_14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.example.myapplication.ui.custom.passwordView.knockCode.IndicatorLockScreen
+        android:id="@+id/knockIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/size_50"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/size_10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"/>
+
+    <com.example.myapplication.ui.custom.passwordView.knockCode.KnockCodeView
+        android:id="@+id/knockView"
+        android:layout_width="@dimen/size_250"
+        android:layout_height="@dimen/size_250"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/size_10"
+        android:foregroundGravity="center"
+        android:gravity="center|top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/knockIndicator" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,37 @@
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottom_sheet_finger"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageview_finger"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/size_24"
+        android:background="@drawable/ic_security_fingerprint"
+        android:padding="14dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textview_finger_touch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="@string/text_default_instruction"
+        android:textColor="@color/black23253A" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_cancel_finger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginLeft="@dimen/size_24"
+        android:layout_marginTop="@dimen/size_24"
+        android:layout_marginRight="@dimen/size_24"
+        android:background="@drawable/bg_common_ripple"
+        android:text="@string/cancelLabel"
+        android:textColor="@color/black" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

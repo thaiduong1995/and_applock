@@ -1,0 +1,11 @@
+{
+  "config": {
+    "required_upgrade": [
+      {
+        "version_name": "debug_required_local_1",
+        "version_code": 1
+      }
+    ]
+  },
+  "latest_version": 1
+}

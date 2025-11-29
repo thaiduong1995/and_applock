@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    android:fitsSystemWindows="false">
+
+    <SurfaceView
+        android:id="@+id/textureView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/bgView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primary"
+        android:scaleType="centerCrop" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_24"
+        android:layout_marginTop="@dimen/size_35"
+        android:text="@string/forgot_password"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgFingerPrint"
+        android:layout_width="@dimen/size_44"
+        android:layout_height="@dimen/size_44"
+        android:layout_marginEnd="@dimen/size_24"
+        android:padding="@dimen/size_10"
+        android:src="@drawable/ic_security_fingerprint"
+        app:layout_constraintBottom_toBottomOf="@+id/tvForgotPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvForgotPassword" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgTheme"
+        android:layout_width="@dimen/size_44"
+        android:layout_height="@dimen/size_44"
+        android:padding="@dimen/size_10"
+        android:src="@drawable/ic_nav_theme_selected"
+        app:layout_constraintBottom_toBottomOf="@+id/tvForgotPassword"
+        app:layout_constraintEnd_toStartOf="@+id/imgFingerPrint"
+        app:layout_constraintTop_toTopOf="@+id/tvForgotPassword" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardAppIcon"
+        android:layout_width="@dimen/size_48"
+        android:layout_height="@dimen/size_48"
+        android:layout_marginTop="@dimen/size_15"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardCornerRadius="@dimen/size_10"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvForgotPassword">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgAppIcon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_8"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardAppIcon"
+        tools:text="Calendar" />
+
+    <com.example.myapplication.ui.custom.LockOverlayView
+        android:id="@+id/lockOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/size_22"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAppName"
+        app:layout_constraintVertical_bias="0.8" />
+
+    <View
+        android:id="@+id/lockOverlayDisable"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@id/lockOverlay"
+        app:layout_constraintEnd_toEndOf="@id/lockOverlay"
+        app:layout_constraintStart_toStartOf="@id/lockOverlay"
+        app:layout_constraintTop_toTopOf="@id/lockOverlay" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvUnlockStatus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_14"
+        android:layout_marginBottom="@dimen/size_48"
+        android:gravity="center"
+        android:textColor="@color/redF03738"
+        android:textSize="@dimen/text_size_14"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <include
+        android:id="@+id/layout_banner"
+        layout="@layout/admob_banner_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/fragmentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/size_10" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

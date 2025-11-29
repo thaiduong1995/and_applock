@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_purchase">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgIcon"
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="@dimen/dimen_0"
+        app:layout_constraintBottom_toTopOf="@id/imvTextName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imvClose"
+        app:srcCompat="@drawable/icon_purchase" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imvClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_close_circle" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imvTextName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/imgRemoveAd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgIcon"
+        app:srcCompat="@drawable/ic_app_lock_premium" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgRemoveAd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_10"
+        android:layout_marginEnd="@dimen/size_10"
+        app:layout_constraintBottom_toTopOf="@id/imgAllTheme"
+        app:layout_constraintEnd_toStartOf="@id/txtRemoveAds"
+        app:layout_constraintTop_toBottomOf="@id/imvTextName"
+        app:srcCompat="@drawable/ic_ad_remove" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtRemoveAds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito_normal"
+        android:text="@string/remove_all_ads"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_16"
+        app:layout_constraintBottom_toBottomOf="@id/imgRemoveAd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/imgRemoveAd" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgAllTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_10"
+        app:layout_constraintBottom_toTopOf="@id/imgAllFutures"
+        app:layout_constraintEnd_toEndOf="@id/imgRemoveAd"
+        app:layout_constraintTop_toBottomOf="@id/imgRemoveAd"
+        app:srcCompat="@drawable/ic_theme_purchase" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtAllThemes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito_normal"
+        android:text="@string/unlock_all_themes"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_16"
+        app:layout_constraintBottom_toBottomOf="@id/imgAllTheme"
+        app:layout_constraintStart_toStartOf="@id/txtRemoveAds"
+        app:layout_constraintTop_toTopOf="@id/imgAllTheme" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgAllFutures"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_10"
+        app:layout_constraintBottom_toTopOf="@id/imgLockApp"
+        app:layout_constraintEnd_toEndOf="@id/imgRemoveAd"
+        app:layout_constraintTop_toBottomOf="@id/imgAllTheme"
+        app:srcCompat="@drawable/ic_star_fill" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtAllFutures"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito_normal"
+        android:text="@string/unlock_all_futures"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_16"
+        app:layout_constraintBottom_toBottomOf="@id/imgAllFutures"
+        app:layout_constraintStart_toStartOf="@id/txtRemoveAds"
+        app:layout_constraintTop_toTopOf="@id/imgAllFutures" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgLockApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_10"
+        app:layout_constraintBottom_toTopOf="@id/viewPager"
+        app:layout_constraintEnd_toEndOf="@id/imgRemoveAd"
+        app:layout_constraintTop_toBottomOf="@id/imgAllFutures"
+        app:srcCompat="@drawable/ic_lock_purchase" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtLockApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito_normal"
+        android:text="@string/remove_all_ads"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_16"
+        app:layout_constraintBottom_toBottomOf="@id/imgLockApp"
+        app:layout_constraintStart_toStartOf="@id/txtRemoveAds"
+        app:layout_constraintTop_toTopOf="@id/imgLockApp" />
+
+    <com.yarolegovich.discretescrollview.DiscreteScrollView
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0"
+        android:layout_marginVertical="@dimen/size_5"
+        android:background="@color/transparent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@id/txt_three_days"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgLockApp">
+
+    </com.yarolegovich.discretescrollview.DiscreteScrollView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_three_days"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/size_15"
+        android:text="@string/with_3_days_free"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_16"
+        app:layout_constraintBottom_toTopOf="@id/btnSubscribe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSubscribe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/size_15"
+        android:background="@drawable/bg_button_gradient"
+        android:fontFamily="@font/nunito_normal"
+        android:text="@string/subscribe"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_18"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@id/txtRestore" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtRestore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/size_15"
+        android:text="@string/restore_purchase"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_16"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/ic_lock_shortcut"
+        android:shortcutDisabledMessage="@string/lock_app"
+        android:shortcutId="lock_app"
+        android:shortcutLongLabel="@string/lock_app"
+        android:shortcutShortLabel="@string/lock_app">
+        <intent
+            android:action="action_lock_app"
+            android:targetClass="com.example.myapplication.ui.activities.MainActivity"
+            android:targetPackage="com.cem.applock.hideapps.password" />
+    </shortcut>
+
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/ic_web_shortcut"
+        android:shortcutDisabledMessage="@string/private_browser"
+        android:shortcutId="private_browser"
+        android:shortcutLongLabel="@string/private_browser"
+        android:shortcutShortLabel="@string/private_browser">
+        <intent
+            android:action="action_web"
+            android:targetClass="com.example.myapplication.ui.activities.MainActivity"
+            android:targetPackage="com.cem.applock.hideapps.password" />
+    </shortcut>
+
+<!--    <shortcut-->
+<!--        android:enabled="true"-->
+<!--        android:icon="@drawable/ic_cleaner_shortcut"-->
+<!--        android:shortcutDisabledMessage="@string/phone_cleaner"-->
+<!--        android:shortcutId="phone_cleaner"-->
+<!--        android:shortcutLongLabel="@string/phone_cleaner"-->
+<!--        android:shortcutShortLabel="@string/phone_cleaner">-->
+<!--        <intent-->
+<!--            android:action="action_clean"-->
+<!--            android:targetClass="com.example.myapplication.ui.activities.MainActivity"-->
+<!--            android:targetPackage="com.cem.applock.hideapps.password" />-->
+<!--    </shortcut>-->
+
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/ic_theme_shortcut"
+        android:shortcutDisabledMessage="@string/theme_changer"
+        android:shortcutId="theme_changer"
+        android:shortcutLongLabel="@string/theme_changer"
+        android:shortcutShortLabel="@string/theme_changer">
+        <intent
+            android:action="action_theme"
+            android:targetClass="com.example.myapplication.ui.activities.MainActivity"
+            android:targetPackage="com.cem.applock.hideapps.password" />
+    </shortcut>
+</shortcuts>

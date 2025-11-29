@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <padding android:left="@dimen/size_0_5"
+                android:top="@dimen/size_0_5"
+                android:right="@dimen/size_0_5"
+                android:bottom="@dimen/size_0_5"/>
+            <solid
+                android:color="@color/white"/>
+            <corners android:radius="@dimen/corner_native_ads"/>
+        </shape>
+    </item>
+</layer-list>

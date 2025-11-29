@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.gms.ads.nativead.NativeAdView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/native_ad_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_native_ads">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size_0_1"
+        android:background="@color/bg_color_native"
+        android:padding="@dimen/size_5"
+        app:cardCornerRadius="@dimen/corner_native_ads"
+        app:cardElevation="@dimen/dimen_5">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_color_native"
+            android:padding="@dimen/size_7">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imvAdYellow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ad_badge_yellow" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/icon"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/size_70"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:layout_marginEnd="@dimen/gnt_no_margin"
+                android:layout_marginBottom="@dimen/gnt_no_margin"
+                android:layout_weight="0"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toTopOf="@id/body"
+                app:layout_constraintDimensionRatio="H,1:1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imvAdYellow" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/primary"
+                android:layout_width="@dimen/size_0"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/size_10"
+                android:fontFamily="@font/nunito_normal"
+                android:lines="1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/gnt_text_size_large"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/icon"
+                app:layout_constraintTop_toTopOf="@id/icon" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imvAdBlue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_3"
+                app:layout_constraintStart_toStartOf="@id/primary"
+                app:layout_constraintTop_toBottomOf="@id/primary"
+                app:srcCompat="@drawable/ic_ad_blue" />
+
+            <RatingBar
+                android:id="@+id/rating_bar"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_0"
+                android:layout_marginStart="@dimen/size_15"
+                android:numStars="5"
+                android:rating="5"
+                android:stepSize="1"
+                android:theme="@style/RatingBar"
+                app:layout_constraintBottom_toBottomOf="@id/imvAdBlue"
+                app:layout_constraintStart_toEndOf="@id/imvAdBlue"
+                app:layout_constraintTop_toTopOf="@id/imvAdBlue" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image"
+                android:layout_width="@dimen/size_23"
+                android:layout_height="@dimen/size_23"
+                android:layout_marginTop="@dimen/size_5"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="@id/imvAdBlue"
+                app:layout_constraintTop_toBottomOf="@id/rating_bar" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/secondary"
+                android:layout_width="@dimen/size_0"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/size_5"
+                android:layout_marginTop="@dimen/size_5"
+                android:fontFamily="@font/nunito_normal"
+                android:lines="1"
+                android:textColor="@color/gnt_gray"
+                android:textSize="@dimen/text_size_13"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@id/image"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/image"
+                app:layout_constraintTop_toBottomOf="@id/rating_bar" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_5"
+                android:fontFamily="@font/nunito_normal"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_14"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/icon" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/cta"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_40"
+                android:layout_marginVertical="@dimen/size_10"
+                android:background="@drawable/bg_ad_btn_common"
+                android:fontFamily="@font/nunito_bold"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/body" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</com.google.android.gms.ads.nativead.NativeAdView>

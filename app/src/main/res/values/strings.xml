@@ -1,0 +1,365 @@
+<resources>
+    <string name="app_name">App Lock</string>
+    <string name="this_action_have_ads">This activity may contain advertising</string>
+    <string name="welcome_app_lock">Welcome to\nAppLock</string>
+    <string name="set_passcode">Set passcode</string>
+    <string name="create">Create</string>
+    <string name="six_digit_pin">6-Digit PIN</string>
+    <string name="four_digit_pin">4-digit PIN</string>
+    <string name="pattern">Pattern</string>
+    <string name="knock_code">Knock Code</string>
+    <string name="create_6_digit_pin">Create 6-Digit PIN</string>
+    <string name="create_4_digit_pin">Create 4-Digit PIN</string>
+    <string name="create_pattern">Create Pattern</string>
+    <string name="create_4_6_touches">Create 4-6 touches.</string>
+    <string name="confirm">Confirm</string>
+    <string name="password_does_not_match">Does not match !</string>
+    <string name="password_length_error">Connect at least 4 dots. Try again...</string>
+    <string name="skip">Skip</string>
+    <string name="preview_one_title">"Protect your privacy "</string>
+    <string name="preview_one_dec">"Take control of your privacy by locking\n your apps with multiple lock options. "</string>
+    <string name="preview_two_title">Friendly Interface</string>
+    <string name="preview_two_dec">"Beautiful and simple interface,\nso you can perform any task easily. "</string>
+    <string name="preview_three_title">"Compatible with all devices  "</string>
+    <string name="preview_thee_dec">The app works smoothly on all devices while\n maintaining performance and functionality.</string>
+    <string name="get_started">Get started</string>
+    <string name="all" translatable="false">All</string>
+    <string name="new_app" translatable="false">New apps</string>
+    <string name="system_app" translatable="false">System apps</string>
+    <string name="lock_all_app">Lock all apps</string>
+    <string name="search_app">Search</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm_to_unlock">Confirm to unlock all ?</string>
+    <string name="unlock">Unlock</string>
+    <string name="locked">Locked</string>
+    <string name="unlocked">Unlock</string>
+    <string name="az">A-Z</string>
+    <string name="za">Z-A</string>
+    <string name="newest">Newest</string>
+    <string name="oldEst">Oldest</string>
+    <string name="request_access">Request access</string>
+    <string name="grant_permission_to_protected">Grant permission “AppLock” to protect your privacy</string>
+    <string name="usage_access">Usage access</string>
+    <string name="show_up_on_other_app">Show up on other apps</string>
+    <string name="go_to_setting">Go to Settings</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="recommend">Recommend</string>
+    <string name="select_app_to_protected">Select app to be protected</string>
+    <string name="security" translatable="false">Security</string>
+    <string name="lock_screen">Lock screen</string>
+    <string name="fingerprint">Fingerprint</string>
+    <string name="pin">PIN</string>
+    <string name="pattern_setting">Pattern Setting</string>
+    <string name="relock_setting">Re-lock setting</string>
+    <string name="after_exit">After exit</string>
+    <string name="always">Always</string>
+    <string name="after_screen_lock">After screen is locked</string>
+    <string name="ten_seconds">10 seconds</string>
+    <string name="thirty_seconds">30 seconds</string>
+    <string name="ont_minius">1 munite</string>
+    <string name="three_minius">3 munites</string>
+    <string name="five_minius">5 munites</string>
+    <string name="ten_minius">10 munites</string>
+    <string name="unlock_animation">Unlock Animation</string>
+    <string name="swipe_top">Swipe Top</string>
+    <string name="change_pattern">Change Pattern</string>
+    <string name="hide_pattern_trails">Hide Pattern Trails</string>
+    <string name="pin_setting">PIN Setting</string>
+    <string name="create_pin">Create your PIN</string>
+    <string name="keyboard_random">Keyboard random</string>
+    <string name="keyboard_random_dec">When AppLocker locks apps with PIN,  the keyboard will be shuffled.</string>
+    <string name="create_your_knock_code">Create your Knock Code</string>
+    <string name="lock_frequency">Lock Frequency</string>
+    <string name="cancelLabel">Cancel</string>
+    <string name="swipe_down">Swipe Down</string>
+    <string name="swipe_right">Swipe Right</string>
+    <string name="swipe_left">Swipe Left</string>
+    <string name="swipe_fade_out">Fade Out</string>
+    <string name="random">Random</string>
+    <string name="tab_lock" translatable="false">Lock</string>
+    <string name="theme" translatable="false">Theme</string>
+    <string name="settings" translatable="false">Settings</string>
+    <string name="set_knock_code">Set Knock Code</string>
+    <string name="create_password_success">Create password success</string>
+    <string name="biometric_unavailable">Biometric features are currently unavailable.</string>
+    <string name="reset">Reset</string>
+    <string name="pin_incorrect">Pin incorrect</string>
+    <string name="pattern_incorrect">Pattern incorrect</string>
+    <string name="knock_incorrect">Knock Code incorrect</string>
+    <string name="forgot_password">Forgot password ?</string>
+
+    <string name="use_biometric_label">Use biometrics</string>
+    <string name="biometric_prompt_message">Use your biometrics to unlock</string>
+    <string name="confirm_device_credential_password">Use password</string>
+    <string name="text_hardware_not_detected">Fingerprint scanner not detected on device</string>
+    <string name="text_add_lock_fingerprint">Add lock fingerprint to your phone and settings</string>
+    <string name="text_add_one_finger">You must add at least one fingerprint to use this feature</string>
+    <string name="text_cancel_finger">Scan fingerPrint canceled</string>
+    <string name="fingerprint_error">Can\'t authenticate</string>
+
+    <string name="text_default_instruction">Touch the fingerprint sensor</string>
+    <string name="text_erro_not_reconized">Not recognized</string>
+
+    <string name="notification_protecting_description">Lock your apps to protect your privacy.</string>
+    <string name="notification_permission_need_title">Enable permission to protection</string>
+    <string name="notification_permission_need_description">Please enable your permissions to use app locker.</string>
+    <string name="notification_protecting_title">Protecting your apps</string>
+    <string name="change">Change</string>
+    <string name="fake_icon">Fake Icons</string>
+    <string name="fake_icon_dec">Disguise apps as another app on \n the home screen</string>
+    <string name="label_default">Default</string>
+    <string name="photos">Photos</string>
+    <string name="save">Save</string>
+    <string name="fake_cover" translatable="false">Fake Cover</string>
+    <string name="cleaner" translatable="false">Cleaner</string>
+    <string name="fake_app_icons" translatable="false">Fake app  Icons</string>
+    <string name="web_browser" translatable="false">Web Browser</string>
+    <string name="location_based_lock" translatable="false">Location based-lock</string>
+    <string name="time_based_lock" translatable="false">Time-based lock</string>
+    <string name="wifi_based_lock" translatable="false">Wifi-based lock</string>
+    <string name="capture_intruder" translatable="false">Capture Intruders</string>
+    <string name="your_app_is_stopped">Unfortunately, your app is stopped.</string>
+    <string name="ok">OK</string>
+    <string name="fake_cover_tutorial">Long pressing <font color='#4543FE'>"OK"</font> button will reveal the lock screen, while normal tap will return to home screen. When AppLocker detects a locked app opening, instead of showing the usual lock screen, it displays a screen that lets the user think that the app is crashed.</string>
+    <string name="recommend_signals">Recommend signals</string>
+    <string name="the_operation_could_not_be_completed">"The operation couldn't be completed. (WDGeneralNetworkError 500) "</string>
+    <string name="error_something_went_wrong">"Error! Something went wrong. Please try again "</string>
+    <string name="an_error_occured_while_loading_file">"We're sorry…An error occurred while loading your files "</string>
+    <string name="connected_lost">Connection lost! Please try again</string>
+    <string name="intruders_selfie_enable">Intruder Selfie Enabled</string>
+    <string name="take_picture_intruder">Take pictures of intruders that tries to open the lock mutiple times. Recomended for maximum security.</string>
+    <string name="take_a_picture">Take a picture</string>
+    <string name="on_wrong_unlock">on wrong unlock attempts</string>
+    <string name="after_time">After %d times</string>
+
+    <string name="search_browser">Search for or enter a URL</string>
+    <string name="social_media">Social media</string>
+    <string name="entertainment">News &amp; Entertainment</string>
+    <string name="shopping">Shopping</string>
+    <string name="google">Google</string>
+    <string name="instagram">Instagram</string>
+    <string name="facebook">Facebook</string>
+    <string name="skype">Skype</string>
+    <string name="app_1">App 1</string>
+    <string name="no_intruder_found">No intruders found.</string>
+    <string name="intruder_count">%d intruders</string>
+    <string name="intruder_records">Intruder Records</string>
+    <string name="intruder_details">Intruder Details</string>
+    <string name="app_name_label">App name</string>
+    <string name="lock_try_count">Lock try count</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="empty_description_location_base_lock">Tap the “Lock” icon the right side of app to lock.</string>
+    <string name="radius">Radius</string>
+    <string name="inverse">Inverse</string>
+    <string name="edit">Edit</string>
+    <string name="radius_inverse">Radius (Inverse)</string>
+    <string name="empty_title_location_base_lock">There is no app locked !</string>
+    <string name="message_explain_require_location_permission">Due to Google’s policies, to use Wi-Fi schedules, please set location access to Allow all the time</string>
+    <string name="text_why_need_location_permission">Why should I grant this permission ?</string>
+    <string name="detail_message_explain_require_location_permission">In order to turn schedules on and off, App Lock needs location access to tell which network you connected to while the app is in the background. Don’t worry, the networks you connect to are not stored or used in any other way.</string>
+    <string name="text_choose_wifi_networks">Choose Wi-Fi networks</string>
+    <string name="text_explain_require_gps_permission">To scan the list of Wi-Fi networks, you need to enable location services.</string>
+    <string name="text_connected">Connected</string>
+    <string name="you_not_select_icon">You not select icon</string>
+    <string name="need_request_access">Request access</string>
+    <string name="need_permission_shortcut">The app needs permission to create shortcuts</string>
+    <string name="create_shortcut_success">Updated shortcut successfully</string>
+    <string name="cannot_get_location">Can\'t get location</string>
+    <string name="location">Location</string>
+    <string name="location_value_radius">%d m</string>
+    <string name="text_edit_location_name_here">Edit location name here</string>
+    <string name="text_edit_location">Edit Name</string>
+
+    <string name="history">History</string>
+    <string name="bookmark">BookMark</string>
+    <string name="clear_data">Clear browsing data…</string>
+    <string name="clean" translatable="false">Clean</string>
+    <string name="tap_to_scan" translatable="false">Tap to Scan</string>
+    <string name="set_time_limit">Set time limit</string>
+    <string name="start_time">Start time</string>
+    <string name="end_time">End time</string>
+    <string name="scanning_junk_file">Scanning junk files…</string>
+    <string name="cleaner_junk_file">Junk files</string>
+    <string name="cleaner_photos">Photos</string>
+    <string name="cleaner_videos">Videos</string>
+    <string name="cleaner_contacts">Contacts</string>
+    <string name="cache_ad_files_apk">Cache, ad, files, apks,…</string>
+    <string name="images">Items: %d | %s</string>
+    <string name="photo_count">%d photos | %s</string>
+    <string name="video_count">%d videos | %s</string>
+    <string name="contacts">Contacts: %d</string>
+    <string name="no_selected_data">"No select "</string>
+    <string name="files_can_be_cleaned">%s can be cleaned</string>
+    <string name="clean_up">Clean up %s</string>
+    <string name="scan_percent">%d %</string>
+    <string name="again">Again</string>
+    <string name="scan">Scan</string>
+    <string name="cleaning_junk_file">Cleaning…</string>
+    <string name="cleaned_up_successful">Cleaned up %s successfully</string>
+    <string name="confirm_to_delete_all_tabs">Confirm to delete all tabs</string>
+    <string name="yes">Yes</string>
+    <string name="txt_search_wi_fi">Search Wi-Fi</string>
+    <string name="hint_search_map">Recent search</string>
+    <string name="recent_label">Recent</string>
+    <string name="no_result_search_location">There are no history!</string>
+    <string name="text_time_lock">Block from <font color="#4543FE">%s</font> to <font color="#18A8FF">%s</font></string>
+    <string name="message_require_storage_permission">Applock needs access to device storage</string>
+    <string name="time_lock_time_range_error">The end time must be greater than the start time</string>
+    <string name="standard_theme">Standard Theme</string>
+    <string name="standard_theme_dec">You can choose a theme from the advanced theme library or create a custom theme</string>
+    <string name="my_library">My Library</string>
+    <string name="custom_theme">Custom Themes</string>
+    <string name="default_theme" translatable="false">Default Theme</string>
+    <string name="theme_topic" translatable="false">Theme Topic</string>
+    <string name="gradient" translatable="false">Gradient</string>
+    <string name="nature" translatable="false">Nature</string>
+    <string name="dark_mode" translatable="false">Dark mode</string>
+    <string name="minimal" translatable="false">Minimal</string>
+    <string name="comic" translatable="false">Comic</string>
+    <string name="pass_code">Passcode</string>
+    <string name="see_more">See more</string>
+    <string name="preview">Preview</string>
+    <string name="use_theme">Use Theme</string>
+    <string name="change_theme_success">Theme changed</string>
+    <string name="continue_label">Continue</string>
+    <string name="you_need_to_select_type">You need to select lock type</string>
+    <string name="background">Background</string>
+    <string name="Dots">Dots</string>
+    <string name="line_color">Line color</string>
+    <string name="choose_our_color">Choose your solid color</string>
+    <string name="common_error">Something went wrong</string>
+    <string name="knock_color">Knock color</string>
+    <string name="Numbers_color">Number color</string>
+    <string name="custom_theme_created">Custom theme created</string>
+    <string name="you_must_select_background">You must select background</string>
+    <string name="delete">Delete</string>
+    <string name="Cancel">Cancel</string>
+    <string name="confirm_delete_theme">Confirm to delete this Theme</string>
+    <string name="location_name_cannot_be_empty">Location name cannot be empty</string>
+    <string name="general">General</string>
+    <string name="app_lock">AppLock</string>
+    <string name="app_lock_description">Turning it off will disable AppLock</string>
+    <string name="vibration_on_input">Vibration on input</string>
+    <string name="advanced">Advanced</string>
+    <string name="uninstall_protection_description">Prevent accidental uninstallation</string>
+    <string name="uninstall_protection">Uninstall protection</string>
+    <string name="lock_new_app">Lock new apps</string>
+    <string name="lock_new_app_description">One tap to lock new installed apps</string>
+    <string name="security_question">Security question</string>
+    <string name="security_question_description">Help to reset passwords</string>
+    <string name="show_security_question">Show security question</string>
+    <string name="other">Other</string>
+    <string name="language_option">Language option</string>
+    <string name="share_with_friends">Share with friends</string>
+    <string name="rate_us">Rate us</string>
+    <string name="privacy_policy">Privacy policy</string>
+    <string name="feedback">Feedback or suggestion</string>
+    <string name="faq">FAQ</string>
+    <string name="set_security_question">Set security question</string>
+    <string name="help_to_reset_your_password">Help to reset your password</string>
+    <string name="grant_permission_to_uninstall_protection">In order to prevent intruders from uninstalling the app, please activate Applock as “Device administrator”.</string>
+    <string name="language">Language</string>
+    <string name="notice">Notice</string>
+    <string name="turn_off">Turn off</string>
+    <string name="confirm_to_off_protection">This will put your app at risk of being uninstalled by intruders, and you may lose all private fields.</string>
+    <string name="question_favorite_color">What’s your favorite color ?</string>
+    <string name="question_pet_name">What’s your pet’s name ?</string>
+    <string name="question_lucky_number">What’s your lucky number ?</string>
+    <string name="app_decs">App Lock 2023</string>
+    <string name="english" translatable="false">English</string>
+    <string name="how_to_set_pin_code">How to set a PIN code ?</string>
+    <string name="how_to_set_pin_code_description"><![CDATA[Open App Lock > Settings > <font color=#1768F5> <u> Password type</u> </font> > PIN\]]></string>
+    <string name="how_to_enable_finger_print">How to enable Fingerprint</string>
+    <string name="how_to_enable_finger_print_description"><![CDATA[1.Add your fingerprint in the <font color=#1768F5> <u> phone settings</u> </font> <br /> 2.Open App Lock > Security > Switch on <font color=#1768F5> <u>Fingerprint unlock</u> </font> <br /> If your device doesn’t support fingerprint recognition, you can’t use fingerprint to unlock.]]></string>
+    <string name="how_to_disable_finger_print">How to disable Fingerprint  Unlock ?</string>
+    <string name="how_to_disable_finger_print_description"><![CDATA[Open App Lock > Security > Tap <font color=#1768F5> <u> Fingerprint unlock</u> </font> to turn it off.]]></string>
+    <string name="how_to_change_pin_code">How to change PIN code ?</string>
+    <string name="how_to_change_pin_code_description"><![CDATA[Open App Lock > Security > <font color=#1768F5> <u> Change PIN code</u> </font>]]></string>
+    <string name="how_to_uninstall_protection">How to turn on Uninstall Protection</string>
+    <string name="how_to_uninstall_protection_description"><![CDATA[Open App Lock > Settings > <font color=#1768F5> <u> Uninstall Protection</u> </font> Activate App Lock as Device Administrator. <br />In this way, no one can uninstall App Lock without a password.]]></string>
+    <string name="how_to_relock_setting">I need to unlock repeatedly,  which annoys me.</string>
+    <string name="how_to_relock_setting_description"><![CDATA[You can tap<font color=#1768F5> <u> Relock settings</u> </font> to customize the lock time in Security.]]> </string>
+    <string name="how_to_fake_icon">How to fake icon apps</string>
+    <string name="how_to_fake_icon_description"><![CDATA[Due to system restrictions, App Lock support change apps, you can change the icon of apps on your phone to protect it by tapping <font color=#1768F5> <u>Fake Icons</u> </font> in Tools]]>  </string>
+    <string name="error_empty_input">Error text, please try again</string>
+    <string name="input_length">%d/%d</string>
+    <string name="security_question_create_title">"Set security question "</string>
+    <string name="wrong_answer">Wrong answer, please try again</string>
+    <string name="how_to_use_fake_app">How to use Fake apps</string>
+    <string name="step_one">Step 1</string>
+    <string name="fake_icon_step_1"><![CDATA["After determining the app you need fake apps, select “+” icon to “Select” 1 new icon for the app > Click “Save” "]]></string>
+    <string name="fake_icon_step_2"><![CDATA[Click \"Change\" to make fake apps and click \"Add\" > Immediately a message has successfully created \"Updated Shortcut Successfully\"]]></string>
+    <string name="step_two">Step 2</string>
+    <string name="how_to_use_hide_app">How to use Hide Apps  on Android phone</string>
+    <string name="hide_app_step_1"><![CDATA[Hide apps on Android are managed in Settings Screen . You need to go to “Settings” > “Display” and “Select Home screen”.]]></string>
+    <string name="hide_app_step_2">In the standard screen, navigate to the “Hide apps” section .</string>
+    <string name="step_three">Step 3</string>
+    <string name="hide_app_step_3">"When moving to the next screen, you can select the applications that you want to hide and click “Done” to complete the selection you just made. "</string>
+    <string name="password_too_short">Password too short</string>
+    <string name="verify">Verify</string>
+    <string name="enter_security_answer">Enter security answer</string>
+    <string name="security_question_created">Security question created</string>
+    <string name="fail_to_unlock">Failed to authenticate the unlock password</string>
+    <string name="reset_pattern">Reset pattern</string>
+    <string name="reset_knock_code">Reset knock code</string>
+    <string name="create_knock_code">Create knock code</string>
+    <string name="reset_pin_code">Reset pin code</string>
+    <string name="create_pin_code">Create pin code</string>
+    <string name="confirm_to_lock">Confirm to lock all ?</string>
+    <string name="lock">Lock All</string>
+    <string name="create_lock_icon">Lock app (%d/%d)</string>
+    <string name="location_number">Location %d</string>
+    <string name="confirm_4_digit_pin">Confirm 4-Digit PIN</string>
+    <string name="confirm_6_digit_pin">Confirm 6-Digit PIN</string>
+    <string name="confirm_pattern">Confirm Pattern</string>
+    <string name="confirm_knock">Confirm Knock</string>
+    <string name="confirm_delete_time">Confirm to delete this section</string>
+    <string name="number_tries"> %d tries</string>
+    <string name="did_you_forgot_password">Did you forgot password</string>
+    <string name="try_again_after_2_hours">Try again after 2 hours</string>
+    <string name="lock_app" translatable="false">Lock App</string>
+    <string name="phone_cleaner" translatable="false">Cleaner</string>
+    <string name="private_browser" translatable="false">Private Browser</string>
+    <string name="theme_changer" translatable="false">Theme Changer</string>
+    <string name="bbc_news" translatable="false">NNC News</string>
+    <string name="twitter" translatable="false">Twitter</string>
+    <string name="youtube" translatable="false">Youtube</string>
+    <string name="amazon" translatable="false">Amazon</string>
+    <string name="google_shopping" translatable="false">Google shopping</string>
+    <string name="get_premium">Get Premium</string>
+    <string name="get_premium_lock_more_app">Get premium lock more app</string>
+    <string name="user_tools">Use "%s"</string>
+    <string name="remove_all_ads">Remove all ads</string>
+    <string name="unlock_all_themes">Unlock all themes</string>
+    <string name="unlock_all_futures">Unlock all futures</string>
+    <string name="lock_unlimited_apps">Lock unlimited apps</string>
+    <string name="month">Month</string>
+    <string name="week">Week</string>
+    <string name="with_3_days_free">3-day Free trial, then $4.99/week</string>
+    <string name="with_days_free">3-day Free trial</string>
+    <string name="year">Year</string>
+    <string name="price_month">%s/month</string>
+    <string name="subscribe">Subscribe</string>
+    <string name="restore_purchase">Restore purchase</string>
+    <!--    purchase-->
+    <string name="buy_premium_success">you have successfully purchased the premium package.</string>
+    <string name="buy_premium_fail">Error, purchase failed!</string>
+
+    <string name="watch_a_video_to_get_more">Watch a video ad to get more.</string>
+    <string name="watch_now">Watch now</string>
+    <string name="watch_a_video_to_get_theme">Watch a video to unlock 1 Premium Theme</string>
+    <string name="watch_a_video_to_get_cleaner">Watch a video get 1 more Cleaner turn</string>
+    <string name="loading_ads">Loading Ads. Please wait</string>
+    <string name="loading_ads_failed">Load ads failed , please again</string>
+    <string name="user_location">User location</string>
+    <string name="to_see_maps_for_creating_location_base">To see maps for creating location-based lock,\n allow AppLock to use your location all of the\n time</string>
+    <string name="applock_collects_location_data">AppLock collects location data to display the\n location and radius of the area on the map, so\n you can select and create your own lock zone\n even when the app is closed or not in use.</string>
+    <string name="deny">Deny</string>
+    <string name="accept">Accept</string>
+    <string name="update_location_settings">Update location settings</string>
+    <string name="allow_us_to_access">Allow us to access your location <font color='#FFFFFF'>"all the time"</font> so we can provide personal recommendations</string>
+    <string name="no_thanks">No thanks</string>
+    <string name="update_settings">Update settings</string>
+    <string name="notification">Notification</string>
+</resources>

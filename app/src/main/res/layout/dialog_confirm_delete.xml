@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog_confirm"
+    android:padding="@dimen/size_16">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_trash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_10"
+        android:src="@drawable/ic_trash_dialog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_10"
+        android:text="@string/confirm_to_delete_all_tabs"
+        android:textColor="@color/grayC4CDE2"
+        android:textSize="@dimen/text_size_16"
+        app:layout_constraintEnd_toEndOf="@+id/iv_trash"
+        app:layout_constraintStart_toStartOf="@+id/iv_trash"
+        app:layout_constraintTop_toBottomOf="@+id/iv_trash" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvCancel"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/size_52"
+        android:layout_marginTop="@dimen/size_16"
+        android:gravity="center"
+        android:text="@string/cancel"
+        android:textColor="@color/grayC4CDE2"
+        app:layout_constraintEnd_toStartOf="@+id/tvConfirm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvConfirm"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/size_52"
+        android:layout_marginStart="@dimen/size_16"
+        android:layout_marginTop="@dimen/size_16"
+        android:background="@drawable/bg_radius_100_color_blue"
+        android:gravity="center"
+        android:text="@string/yes"
+        android:textColor="@color/grayC4CDE2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvCancel"
+        app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

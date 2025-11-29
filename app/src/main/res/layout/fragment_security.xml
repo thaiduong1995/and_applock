@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    android:clipToPadding="false"
+    android:paddingHorizontal="@dimen/size_24"
+    android:paddingBottom="@dimen/size_100">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSecurity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_24"
+            android:text="@string/security"
+            android:textColor="@color/grayC4CDE2"
+            android:textSize="@dimen/text_size_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgLock"
+            android:layout_width="@dimen/size_24"
+            android:layout_height="@dimen/size_24"
+            android:layout_marginTop="@dimen/size_16"
+            android:src="@drawable/ic_lock"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvSecurity" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_4"
+            android:text="@string/lock_screen"
+            android:textColor="@color/blue4543FE"
+            android:textSize="@dimen/text_size_16"
+            app:layout_constraintBottom_toBottomOf="@id/imgLock"
+            app:layout_constraintStart_toEndOf="@id/imgLock"
+            app:layout_constraintTop_toTopOf="@id/imgLock" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutPattern"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_16"
+            android:background="@drawable/bg_stroke_1_color_blue_radius_16"
+            android:padding="@dimen/size_8"
+            app:layout_constraintEnd_toStartOf="@+id/layoutPin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imgLock">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgPattern"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:src="@drawable/ic_security_pattern"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvPattern"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_10"
+                android:text="@string/pattern"
+                android:textColor="@color/grayC4CDE2"
+                android:textSize="@dimen/text_size_14"
+                app:layout_constraintEnd_toStartOf="@+id/cbPatternLock"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imgPattern" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/cbPatternLock"
+                android:layout_width="@dimen/size_24"
+                android:layout_height="@dimen/size_24"
+                android:layout_marginStart="@dimen/size_8"
+                android:button="@drawable/bg_round_checkbox"
+                android:checked="false"
+                android:clickable="false"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="@id/tvPattern"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tvPattern"
+                app:layout_constraintTop_toTopOf="@+id/tvPattern" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutPin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_16"
+            android:background="@drawable/bg_stroke_1_color_gray_radius_16"
+            android:padding="@dimen/size_8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/layoutPattern"
+            app:layout_constraintTop_toTopOf="@+id/layoutPattern">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgPin"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:src="@drawable/ic_security_pin_code"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvPin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_10"
+                android:text="@string/pin"
+                android:textColor="@color/grayC4CDE2"
+                android:textSize="@dimen/text_size_14"
+                app:layout_constraintEnd_toStartOf="@+id/cbPinLock"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imgPin" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/cbPinLock"
+                android:layout_width="@dimen/size_24"
+                android:layout_height="@dimen/size_24"
+                android:layout_marginStart="@dimen/size_8"
+                android:button="@drawable/bg_round_checkbox"
+                android:checked="false"
+                android:clickable="false"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="@id/tvPin"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tvPin"
+                app:layout_constraintTop_toTopOf="@+id/tvPin" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutKnockCode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_16"
+            android:background="@drawable/bg_stroke_1_color_gray_radius_16"
+            android:padding="@dimen/size_8"
+            app:layout_constraintEnd_toStartOf="@+id/layoutFingerPrint"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layoutPattern">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgKnockCode"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:src="@drawable/ic_security_knock_code"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvKnockCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_10"
+                android:text="@string/knock_code"
+                android:textColor="@color/grayC4CDE2"
+                android:textSize="@dimen/text_size_14"
+                app:layout_constraintEnd_toStartOf="@+id/cbKnockCode"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imgKnockCode" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/cbKnockCode"
+                android:layout_width="@dimen/size_24"
+                android:layout_height="@dimen/size_24"
+                android:layout_marginStart="@dimen/size_8"
+                android:button="@drawable/bg_round_checkbox"
+                android:checked="false"
+                android:clickable="false"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="@id/tvKnockCode"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tvKnockCode"
+                app:layout_constraintTop_toTopOf="@+id/tvKnockCode" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutFingerPrint"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/size_16"
+            android:background="@drawable/bg_stroke_1_color_blue_radius_16"
+            android:padding="@dimen/size_8"
+            app:layout_constraintBottom_toBottomOf="@id/layoutKnockCode"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/layoutKnockCode"
+            app:layout_constraintTop_toTopOf="@+id/layoutKnockCode">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgFingerPrint"
+                android:layout_width="@dimen/size_64"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_4"
+                android:src="@drawable/ic_security_fingerprint"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvFingerPrint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_10"
+                android:layout_marginBottom="@dimen/size_6"
+                android:text="@string/fingerprint"
+                android:textColor="@color/grayC4CDE2"
+                android:textSize="@dimen/text_size_14"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/swFingerPrint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/size_8"
+                android:layout_marginTop="@dimen/size_4"
+                android:clickable="false"
+                android:theme="@style/SwitchStyle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgFingerPrint" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutRelockSetting"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_48"
+            android:layout_marginTop="@dimen/size_16"
+            android:background="@drawable/bg_stroke_1_color_gray_radius_100"
+            app:layout_constraintTop_toBottomOf="@id/layoutKnockCode">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvRelockSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/size_16"
+                android:text="@string/lock_frequency"
+                android:textColor="@color/grayC4CDE2"
+                android:textSize="@dimen/text_size_14"
+                app:layout_constraintBottom_toTopOf="@+id/tvRelockDecs"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvRelockDecs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/after_exit"
+                android:textColor="@color/grayC4CDE2"
+                android:textSize="@dimen/text_size_12"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tvRelockSetting"
+                app:layout_constraintTop_toBottomOf="@+id/tvRelockSetting" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvRelockTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/always"
+                android:textColor="@color/grayC4CDE2"
+                android:textSize="@dimen/text_size_14"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imgSettingRelockTime"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgSettingRelockTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/size_16"
+                android:src="@drawable/ic_arrow_right"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutUnlockAnimation"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_48"
+            android:layout_marginTop="@dimen/size_8"
+            android:background="@drawable/bg_stroke_1_color_gray_radius_100"
+            app:layout_constraintTop_toBottomOf="@id/layoutRelockSetting">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvUnlockAnimation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/size_16"
+                android:text="@string/unlock_animation"
+                android:textColor="@color/grayC4CDE2"
+                android:textSize="@dimen/text_size_14"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvAnimation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/swipe_top"
+                android:textColor="@color/grayC4CDE2"
+                android:textSize="@dimen/text_size_14"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imgSettingUnlockAnimation"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgSettingUnlockAnimation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/size_16"
+                android:src="@drawable/ic_arrow_right"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgPatternSetting"
+            android:layout_width="@dimen/size_24"
+            android:layout_height="@dimen/size_24"
+            android:layout_marginTop="@dimen/size_24"
+            android:src="@drawable/ic_pattern_setting"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layoutUnlockAnimation" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_4"
+            android:text="@string/pattern_setting"
+            android:textColor="@color/blue4543FE"
+            android:textSize="@dimen/text_size_16"
+            app:layout_constraintBottom_toBottomOf="@id/imgPatternSetting"
+            app:layout_constraintStart_toEndOf="@+id/imgPatternSetting"
+            app:layout_constraintTop_toTopOf="@id/imgPatternSetting" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutChangePattern"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_48"
+            android:layout_marginTop="@dimen/size_8"
+            android:background="@drawable/bg_stroke_1_color_gray_radius_100"
+            app:layout_constraintTop_toBottomOf="@id/imgPatternSetting">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvChangepattern"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/size_16"
+                android:text="@string/change_pattern"
+                android:textColor="@color/grayC4CDE2"
+                android:textSize="@dimen/text_size_14"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgSettingChangePattern"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/size_16"
+                android:src="@drawable/ic_arrow_right"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutHidePatternTrails"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_48"
+            android:layout_marginTop="@dimen/size_8"
+            android:background="@drawable/bg_stroke_1_color_gray_radius_100"
+            app:layout_constraintTop_toBottomOf="@id/layoutChangePattern">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvHidePatternTrails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/size_16"
+                android:text="@string/hide_pattern_trails"
+                android:textColor="@color/grayC4CDE2"
+                android:textSize="@dimen/text_size_14"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/swHidePatternTrails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/size_16"
+                android:clickable="false"
+                android:theme="@style/SwitchStyle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgPinSetting"
+            android:layout_width="@dimen/size_24"
+            android:layout_height="@dimen/size_24"
+            android:layout_marginTop="@dimen/size_24"
+            android:src="@drawable/ic_pin_setting"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layoutHidePatternTrails" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_4"
+            android:text="@string/pin_setting"
+            android:textColor="@color/blue4543FE"
+            android:textSize="@dimen/text_size_16"
+            app:layout_constraintBottom_toBottomOf="@id/imgPinSetting"
+            app:layout_constraintStart_toEndOf="@+id/imgPinSetting"
+            app:layout_constraintTop_toTopOf="@id/imgPinSetting" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutCreatePin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_48"
+            android:layout_marginTop="@dimen/size_8"
+            android:background="@drawable/bg_stroke_1_color_gray_radius_100"
+            app:layout_constraintTop_toBottomOf="@id/imgPinSetting">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvCreatePin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/size_16"
+                android:text="@string/create_pin"
+                android:textColor="@color/grayC4CDE2"
+                android:textSize="@dimen/text_size_14"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgSettingPin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/size_16"
+                android:src="@drawable/ic_arrow_right"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutRandomKeyboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layoutCreatePin">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgKeyboardRandom"
+                android:layout_width="@dimen/size_64"
+                android:layout_height="@dimen/size_64"
+                android:src="@drawable/ic_keyboard_random"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvKeyboardRandom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/size_8"
+                android:text="@string/keyboard_random"
+                android:textColor="@color/grayC4CDE2"
+                android:textSize="@dimen/text_size_14"
+                app:layout_constraintBottom_toTopOf="@+id/tvKeyboardRandomDec"
+                app:layout_constraintEnd_toStartOf="@+id/swKeyboardRandom"
+                app:layout_constraintStart_toEndOf="@id/imgKeyboardRandom"
+                app:layout_constraintTop_toTopOf="@id/imgKeyboardRandom"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/swKeyboardRandom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:theme="@style/SwitchStyle"
+                app:layout_constraintBottom_toBottomOf="@+id/tvKeyboardRandom"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvKeyboardRandom" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvKeyboardRandomDec"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/size_8"
+                android:layout_marginTop="@dimen/size_4"
+                android:text="@string/keyboard_random_dec"
+                android:textColor="@color/grayC4CDE2"
+                android:textSize="@dimen/text_size_10"
+                app:layout_constraintBottom_toBottomOf="@+id/imgKeyboardRandom"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/imgKeyboardRandom"
+                app:layout_constraintTop_toBottomOf="@+id/tvKeyboardRandom" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgKnockCodeSetting"
+            android:layout_width="@dimen/size_24"
+            android:layout_height="@dimen/size_24"
+            android:layout_marginTop="@dimen/size_24"
+            android:src="@drawable/ic_knock_code_setting"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layoutRandomKeyboard" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_4"
+            android:text="@string/knock_code"
+            android:textColor="@color/blue4543FE"
+            android:textSize="@dimen/text_size_16"
+            app:layout_constraintBottom_toBottomOf="@id/imgKnockCodeSetting"
+            app:layout_constraintStart_toEndOf="@+id/imgKnockCodeSetting"
+            app:layout_constraintTop_toTopOf="@id/imgKnockCodeSetting" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutCreateKnockCode"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_48"
+            android:layout_marginTop="@dimen/size_8"
+            android:layout_marginBottom="@dimen/size_24"
+            android:background="@drawable/bg_stroke_1_color_gray_radius_100"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imgKnockCodeSetting">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvCreateKnockCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/size_16"
+                android:text="@string/create_your_knock_code"
+                android:textColor="@color/grayC4CDE2"
+                android:textSize="@dimen/text_size_14"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgSettingKnockCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/size_16"
+                android:src="@drawable/ic_arrow_right"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

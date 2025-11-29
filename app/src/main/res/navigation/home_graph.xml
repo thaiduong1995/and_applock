@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home_graph"
+    app:startDestination="@id/homeScreen">
+
+    <fragment
+        android:id="@+id/homeScreen"
+        android:name="com.example.myapplication.ui.fragment.HomeFragment" />
+
+    <fragment
+        android:id="@+id/createPasswordScreen"
+        android:name="com.example.myapplication.ui.fragment.CreatePasswordFragment" />
+
+    <fragment
+        android:id="@+id/fakeIconScreen"
+        android:name="com.example.myapplication.ui.fragment.FakeIconFragment" />
+
+    <fragment
+        android:id="@+id/webBrowserScreen"
+        android:name="com.example.myapplication.ui.fragment.BrowserFragment" />
+
+    <fragment
+        android:id="@+id/fakeCoverScreen"
+        android:name="com.example.myapplication.ui.fragment.FakeCoverFragment" />
+
+    <fragment
+        android:id="@+id/intrudersScreen"
+        android:name="com.example.myapplication.ui.fragment.CaptureIntrudersFragment" />
+
+    <fragment
+        android:id="@+id/intruderRecordScreen"
+        android:name="com.example.myapplication.ui.fragment.IntruderRecordsFragment" />
+
+    <fragment
+        android:id="@+id/multipleTabBrowserScreen"
+        android:name="com.example.myapplication.ui.fragment.MultipleTabsBrowserFragment" />
+
+    <fragment
+        android:id="@+id/historyBrowserScreen"
+        android:name="com.example.myapplication.ui.fragment.HistoryFragment" />
+
+    <fragment
+        android:id="@+id/topicPreviewScreen"
+        android:name="com.example.myapplication.ui.fragment.TopicPreviewFragment" />
+
+    <fragment
+        android:id="@+id/detailsThemeScreen"
+        android:name="com.example.myapplication.ui.fragment.DetailsThemeFragment" />
+
+    <fragment
+        android:id="@+id/moreThemeScreen"
+        android:name="com.example.myapplication.ui.fragment.MoreThemeFragment" />
+
+    <fragment
+        android:id="@+id/customThemeScreen"
+        android:name="com.example.myapplication.ui.fragment.CustomThemeFragment" />
+
+    <fragment
+        android:id="@+id/detailsCustomThemeScreen"
+        android:name="com.example.myapplication.ui.fragment.DetailsCustomThemeFragment" />
+
+    <fragment
+        android:id="@+id/myLibraryScreen"
+        android:name="com.example.myapplication.ui.fragment.MyLibraryFragment" />
+
+    <fragment
+        android:id="@+id/previewListCustomThemeScreen"
+        android:name="com.example.myapplication.ui.fragment.PreviewListCustomThemeFragment" />
+
+    <fragment
+        android:id="@+id/faqScreen"
+        android:name="com.example.myapplication.ui.fragment.FAQFragment" />
+
+    <fragment
+        android:id="@+id/howToUseScreen"
+        android:name="com.example.myapplication.ui.fragment.HowToUseFragment" />
+    <fragment
+        android:id="@+id/purchaseScreen"
+        android:name="com.example.myapplication.ui.fragment.PurchaseFragment" />
+</navigation>

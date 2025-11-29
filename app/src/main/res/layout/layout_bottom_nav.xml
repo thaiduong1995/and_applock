@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_74"
+        android:background="@drawable/bg_bottom_stroke"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.example.myapplication.ui.custom.TabView
+            android:id="@+id/tabLock"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/tabSecurity"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.example.myapplication.ui.custom.TabView
+            android:id="@+id/tabSecurity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/tabTools"
+            app:layout_constraintStart_toEndOf="@id/tabLock"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/tabTools"
+            android:layout_width="@dimen/size_80"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/tabThemes"
+            app:layout_constraintStart_toEndOf="@id/tabSecurity"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.example.myapplication.ui.custom.TabView
+            android:id="@+id/tabThemes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/tabSettings"
+            app:layout_constraintStart_toEndOf="@id/tabTools"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.example.myapplication.ui.custom.TabView
+            android:id="@+id/tabSettings"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tabThemes"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imgTool"
+        android:layout_width="@dimen/size_56"
+        android:layout_height="@dimen/size_56"
+        android:src="@drawable/ic_tools"
+        app:layout_constraintBottom_toTopOf="@+id/tabLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tabLayout" />
+</androidx.constraintlayout.widget.ConstraintLayout>

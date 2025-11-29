@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/setup_graph"
+    app:startDestination="@id/previewScreen">
+
+    <fragment
+        android:id="@+id/previewScreen"
+        android:name="com.example.myapplication.ui.fragment.preview.PreviewFragment" />
+
+    <fragment
+        android:id="@+id/setupScreen"
+        android:name="com.example.myapplication.ui.fragment.SetupFragment" />
+
+    <fragment
+        android:id="@+id/suggestLockScreen"
+        android:name="com.example.myapplication.ui.fragment.SuggestLockFragment" />
+
+</navigation>
